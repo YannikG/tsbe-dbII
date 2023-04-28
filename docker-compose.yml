@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  tsbe_dbII_db:
+    container_name: tsbe_dbII_db
+    image: postgres:14.6
+    restart: always
+    environment:
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: secure
+    ports:
+      - "5432:5432"
+    volumes:
+      - type: volume
+        source: tsbe_dbII_db_volume
+        target: /var/lib/postgresql/data
+          
+volumes:
+  tsbe_dbII_db_volume:
