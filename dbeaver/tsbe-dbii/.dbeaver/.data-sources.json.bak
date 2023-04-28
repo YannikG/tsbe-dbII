@@ -9,7 +9,8 @@
 			"configuration": {
 				"host": "localhost",
 				"port": "5432",
-				"url": "jdbc:postgresql://localhost:5432/",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
 				"configurationType": "MANUAL",
 				"type": "dev",
 				"provider-properties": {},
